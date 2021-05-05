@@ -18,6 +18,10 @@ p {
     font-size: larger;
 }
 
+#page-content-wrapper div {
+    align-items: center;
+}
+
 #cite {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -56,6 +60,7 @@ p {
 
 #page-content-wrapper {
     margin-left: 240px;
+    max-width: 1278px;
     min-width: 100vw;
 }
 
