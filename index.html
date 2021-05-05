@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href=".\css\style.css" rel="stylesheet">
+    <script src=".\src\index.js"></script>
+    <title>COVID-19 Data Analysis</title>
+</head>
+
+<body>
+
+    <!-- <div class='glob-div'> -->
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src=".\imgs\covid19_img1.png" width="30" height="30" alt="">COVID-19 Study</div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Introduction</a>
+                <a href="#glob-map" class="list-group-item list-group-item-action bg-light">Global Map</a>
+                <a href="#glob-tree" class="list-group-item list-group-item-action bg-light">Global Treemap</a>
+                <a href="#glob-rank" class="list-group-item list-group-item-action bg-light">Global Rank</a>
+                <a href="#glob-box" class="list-group-item list-group-item-action bg-light">Global boxplot</a>
+                <a href="#us-map" class="list-group-item list-group-item-action bg-light">USA Map</a>
+                <a href="#us-rank" class="list-group-item list-group-item-action bg-light">USA Rank</a>
+                <a href="#us-box" class="list-group-item list-group-item-action bg-light">USA boxplot</a>
+                <a href="#glob-pred" class="list-group-item list-group-item-action bg-light">Global Prediction</a>
+                <a href="#us-pred" class="list-group-item list-group-item-action bg-light">USA Prediction</a>
+                <a href="#cite" class="list-group-item list-group-item-action bg-light">Data Source</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid">
+                <div class='text-content' id="intro">
+                    <h1 style="margin-top: 0;">Introduction</h1>
+                    <p>The novel coronavirus disease 2019 (COVID-19) pandemic caused by the SARS-CoV-2 continues to pose a critical and urgent threat to global health. By April 2021, more than 149 million people get infected by COVID-19 and caused more than
+                        3.14 million fatal cases, known as the most dangerous infectious diseases in the last 20 years. The purpose of this project was to demonstrate data mining and machine learning techniques using the record data of COVID-19 cases
+                        in the worldwide range for the spread of the pandemic analysis and forecast the future new positive case trends in the United States of America. </p>
+                </div>
+                <div class='glob-content' id="glob-map">
+
+                    <h1>Global Map</h1>
+                    <div class='tableauPlaceholder' id='viz1619477070347' style='position: relative'><noscript><a href='#'><img alt='dashboard-glob-up2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-glob-up2&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;dashboard-glob-up2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-glob-up2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619477070347');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '1677px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='glob-content' id="glob-tree">
+                    <h1>Global Accumulative Distribution</h1>
+                    <div class='tableauPlaceholder' id='viz1620162577944' style='position: relative'><noscript><a href='#'><img alt='tree-glob-board ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;tree-glob-board&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;tree-glob-board' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;tree-glob-board&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1620162577944');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='glob-content' id="glob-rank">
+                    <h1>Global Rank and Trends</h1>
+                    <div class='tableauPlaceholder' id='viz1618333689766' style='position: relative'><noscript><a href='#'><img alt='dashboard-glob-down ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-glob-down&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='covid19-dashboard-components&#47;dashboard-glob-down' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-glob-down&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                                </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1618333689766');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '1677px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='glob-content' id="glob-box">
+                    <h1>Global New Cases Distribution</h1>
+                    <div class='tableauPlaceholder' id='viz1620161859241' style='position: relative'><noscript><a href='#'><img alt='box-glob-board ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;box-glob-board&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;box-glob-board' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;box-glob-board&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1620161859241');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='us-content' id='us-map'>
+                    <h1>United States Map</h1>
+                    <div class='tableauPlaceholder' id='viz1619412194780' style='position: relative'><noscript><a href='#'><img alt='dashboard-us-up ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-us-up&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;dashboard-us-up' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-us-up&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619412194780');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '1177px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='us-content' id='us-rank'>
+                    <h1>United States Rank and Trends</h1>
+                    <div class='tableauPlaceholder' id='viz1619412313009' style='position: relative'><noscript><a href='#'><img alt='dashboard-us-down ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-us-down&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;dashboard-us-down' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;dashboard-us-down&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619412313009');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '2177px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='us-content' id='us-box'>
+                    <h1>United States New Cases Distribution</h1>
+                    <div class='tableauPlaceholder' id='viz1620162008241' style='position: relative'><noscript><a href='#'><img alt='box-us-board ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;box-us-board&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='covid19-dashboard-components&#47;box-us-board' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;box-us-board&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1620162008241');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='ml-content' id='glob-pred'>
+                    <h1>Global Trend Analysis</h1>
+                    <div class='tableauPlaceholder' id='viz1619412373883' style='position: relative'><noscript><a href='#'><img alt='pred-glob-dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-pred-glob-dashboard&#47;pred-glob-dashboard&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-pred-glob-dashboard&#47;pred-glob-dashboard' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-pred-glob-dashboard&#47;pred-glob-dashboard&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619412373883');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='ml-content' id='us-pred'>
+                    <h1>United States Trends Prediction</h1>
+                    <div class='tableauPlaceholder' id='viz1619412449529' style='position: relative'><noscript><a href='#'><img alt='covid19-pred-us-dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-pred-us-dashboard&#47;covid19-pred-us-dashboard&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-pred-us-dashboard&#47;covid19-pred-us-dashboard' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-pred-us-dashboard&#47;covid19-pred-us-dashboard&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619412449529');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='ml-content' id='us-pred-vola'>
+                    <h1>United States Pandemic Volatility Forecast</h1>
+                    <div class='tableauPlaceholder' id='viz1619499674842' style='position: relative'><noscript><a href='#'><img alt='usa_volatility ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;us&#47;usa_volatility_dashboard&#47;usa_volatility&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='usa_volatility_dashboard&#47;usa_volatility' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;us&#47;usa_volatility_dashboard&#47;usa_volatility&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1619499674842');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '795px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+
+                <div class='cite' id='cite'>
+                    <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Original Data Source</a>
+                    <a href="https://drive.google.com/drive/folders/1hr746ufVkWQEsdF6jsoj-LGFcozQ0LDc?usp=sharing" target="_blank" rel="noopener noreferrer">Preprocessed Data Source</a>
+                    <a href="https://github.com/JunheZhang66?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
