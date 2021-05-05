@@ -294,6 +294,7 @@
                     </script>
                 </div>
                 <div class='ml-content' id='glob-pred'>
+
                     <h1>Global Trend Analysis</h1>
                     <div class='tableauPlaceholder' id='viz1619412373883' style='position: relative'><noscript><a href='#'><img alt='pred-glob-dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-pred-glob-dashboard&#47;pred-glob-dashboard&#47;1_rss.png' style='border: none' /></a></noscript>
                         <object class='tableauViz' style='display:none;'>
@@ -324,6 +325,44 @@
                         } else {
                             vizElement.style.width = '100%';
                             vizElement.style.height = '727px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <div class='ml-content' id='glob-coef'>
+                    <h1>Global Model Coefficient Analysis</h1>
+                    <div class='tableauPlaceholder' id='viz1620235105555' style='position: relative; overflow-y: hidden;overflow-x: hidden;'><noscript><a href='#'><img alt='coef-glob-board ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;coef-glob-board&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='covid19-dashboard-components&#47;coef-glob-board' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;covid19-dashboard-components&#47;coef-glob-board&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1620235105555');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '247px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1124px';
+                            vizElement.style.height = '247px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '247px';
                         }
                         var scriptElement = document.createElement('script');
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -394,6 +433,7 @@
                     <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Original Data Source</a>
                     <a href="https://drive.google.com/drive/folders/1hr746ufVkWQEsdF6jsoj-LGFcozQ0LDc?usp=sharing" target="_blank" rel="noopener noreferrer">Preprocessed Data Source</a>
                     <a href="https://github.com/JunheZhang66?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://zenodo.org/badge/latestdoi/364547532" target="_blank" rel="noopener noreferrer">Zenodo</a>
                 </div>
             </div>
         </div>
